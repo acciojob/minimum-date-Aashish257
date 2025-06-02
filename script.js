@@ -3,13 +3,13 @@ function minDate(dates) {
 	if(dates.length === 0) {
 		return null;
 	}
-
+ 
 	let min = dates[0];
-	if(date[i] < min) {
+
+	for(let i = 1; i < dates.length; i++) {
+		if(date[i] < min) {
 		min = dates[i];
-	}
-	for(let i = 0; i < dates.length; i++) {
-		
+	    }
 	}
 	return min; 
 }
